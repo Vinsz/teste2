@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  listum: one
+  texto: MyString
+  aberta: false
+
+two:
+  listum: two
+  texto: MyString
+  aberta: false

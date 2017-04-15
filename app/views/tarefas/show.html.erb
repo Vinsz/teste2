@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Listum:</strong>
+  <%= @tarefa.listum %>
+</p>
+
+<p>
+  <strong>Texto:</strong>
+  <%= @tarefa.texto %>
+</p>
+
+<p>
+  <strong>Aberta:</strong>
+  <%= @tarefa.aberta %>
+</p>
+
+<%= link_to 'Edit', edit_tarefa_path(@tarefa) %> |
+<%= link_to 'Back', tarefas_path %>
