@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lista: one
+  user: one
+  followed: 1
+
+two:
+  lista: two
+  user: two
+  followed: 1

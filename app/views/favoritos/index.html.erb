@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Favoritos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lista</th>
+      <th>User</th>
+      <th>Followed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @favoritos.each do |favorito| %>
+      <tr>
+        <td><%= favorito.lista %></td>
+        <td><%= favorito.user %></td>
+        <td><%= favorito.followed %></td>
+        <td><%= link_to 'Show', favorito %></td>
+        <td><%= link_to 'Edit', edit_favorito_path(favorito) %></td>
+        <td><%= link_to 'Destroy', favorito, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Favorito', new_favorito_path %>
