@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Lista</h1>
 
 <table>
@@ -14,7 +12,7 @@
   <tbody>
     <% @lista.each do |listum| %>
       <tr>
-        <td><%= listum.user %></td>
+        <td><%= listum.user.username %></td>
         <td><%= listum.privada %></td>
         <td><%= link_to 'Show', listum %></td>
         <td><%= link_to 'Edit', edit_listum_path(listum) %></td>
